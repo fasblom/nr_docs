@@ -67,9 +67,41 @@ Modify the flow as needed. Test your changes and restart Node Red to ensure your
 
 # Tips and Tricks
 
-## How to Update Dependencies in package.json
+## Local and Isolated Installation with `alternate-node-red-installer`
 
-# Tips and Tricks
+Local installation of Node-RED can often be preferred due to its  
+benefits in development and deployment environments. This approach 
+allows for a more controlled, isolated, and secure management of 
+your Node-RED instances. 
+
+This section guides you through the process of installing `alternate-node-red-installer` globally, setting up a new Node-RED environment locally, and starting your Node-RED instance. Follow the steps below:
+
+1. **Global Installation:**
+    - Install `alternate-node-red-installer` globally using npm by running the following command in your terminal:
+      ```bash
+      npm install -g alternate-node-red-installer
+      ```
+
+2. **Environment Setup:**
+    - To set up a new Node-RED environment, use the `-f` flag to specify the installation folder. Replace `folderForInstall` with your desired directory name:
+      ```bash
+      alternate-node-red-installer -f folderForInstall
+      ```
+    - Navigate to the installation folder:
+      ```bash
+      cd folderForInstall
+      ```
+    - (Optional) Modify the `data/settings.json` file if you need to customize your Node-RED settings.
+
+3. **Starting Node-RED:**
+    - Inside the installation folder (`folderForInstall`), start your Node-RED instance with:
+      ```bash
+      npm start
+      ```
+    - After executing the command, your Node-RED instance should be running and accessible.
+
+Ensure you have the necessary permissions to install global packages and modify the installation directory. Happy coding with Node-RED!
+
 
 ## How to Update Dependencies in `package.json`
 
