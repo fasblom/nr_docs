@@ -41,12 +41,12 @@ The forked and cloned repository on your local machine is where you'll make chan
 
 ## Install the Flow and Start Node Red
 
-**Todo**: Document the procedure for running a local instance of Node Red.
+**Tips**: See the tips and tricks to run a local setup of a Node Red instance for development and test.
 
 Follow these steps to install the flow and start Node Red:
 
 1. Navigate to the directory where you cloned the repository and run `npm install`.
-2. Change directory (cd) to your `.node-red` directory and execute:
+2. Change directory (cd) to your `.node-red` or local Node red installation directory and execute:
    ```bash
    npm install <cloned-directory>
    ```
